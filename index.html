@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pomodoro</title>
+</head>
+<body>
+    <h1>pomodoro timer</h1>
+
+    <div id="status">Trabalhando</div>
+    <div id="tempo">25:00</div>
+
+    <button id="inicio">Iniciar</button>
+    <button id="pausa">Pausar</button>
+    <button id="reseta">Resetar</button>
+
+    <label for="inputTrabalho">Tempo de trabalho (minutos):</label>
+    <input type="number" id="inputTrabalho" min="1" placeholder="Ex: 25" />
+
+    <br /><br />
+
+    <label for="inputPausa">Tempo de pausa (minutos):</label>
+    <input type="number" id="inputPausa" min="1" placeholder="Ex: 5" />
+
+    <br /><br />
+
+
+    <script src="pomodoro.js"></script>
+</body>
+</html>
