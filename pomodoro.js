@@ -105,4 +105,8 @@ resetaBtn.addEventListener('click', () => {
   resetaTempo();
 });
 
+musica.addEventListener('click', () => {
+    playClick();
+})
+
 updateDisplay();

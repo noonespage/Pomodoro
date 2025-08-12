@@ -10,7 +10,7 @@
 
 body {
     font-family: "DynaPuff", system-ui;
-    background: #cbdad5;
+    background: #9e9e9e;
     color: #333;
     display: flex;
     flex-direction: column;
@@ -19,23 +19,37 @@ body {
     min-height: 100vh;
 }
 
+#musica{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#bloco{
+    text-align: center;
+    padding: 15px;
+    padding-bottom: 25px;
+    border: 7px solid #181818c7;
+    border-radius: 24px;
+}
+
 h1 {
     margin-bottom: 30px;
-    color: #3a415a;
+    color: #181818;
     font-weight: 700;
     font-size: 3.5rem;
 }
 
 #status {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin-bottom: 8px;
-    color: #566981;
+    color: #575757;
     font-style: italic;
     }
 
 #tempo {
     font-size: 5rem;
-    color: #3a415a;
+    color: #131313;
     margin-bottom: 30px;
     font-weight: 700;
     letter-spacing: 6px;
@@ -43,10 +57,10 @@ h1 {
 }
 
 input[type="number"] {
-    width: 95px;
-    padding: 6px 10px;
+    width: 60px;
+    padding: 10px 10px;
     margin: 0 12px 20px 0;
-    border: 2px solid #566981;
+    border: 2px solid #575757;
     border-radius: 6px;
     font-size: 1rem;
     outline-offset: 2px;
@@ -54,17 +68,18 @@ input[type="number"] {
 }
 
 input[type="number"]:focus {
-     border-color: #566981;
+     border-color: #828283;
 }
 
 label {
+    padding-top: 5px;
+    padding-bottom: 10px;
     font-size: 1.5rem;
-    margin-right: 6px;
-    color: #34344e;
+    color: #1d1d1d;
 }
 
 button {
-    background-color: #3a415a;
+    background-color: #1d1d1d;
     color: white;
     border: none;
     border-radius: 8px;
@@ -74,12 +89,12 @@ button {
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    box-shadow: 0 3px 6px , #34344e;
+    box-shadow: 0 3px 6px , #3b3b3b;
 }
 
 button:hover {
-    background-color: #566981;
-    box-shadow: 0 4px 12px #89a7b1;
+    background-color: #7a7a7a;
+    box-shadow: 0 4px 12px #b0b0b1;
 }
 
 @media (max-width: 480px) {
