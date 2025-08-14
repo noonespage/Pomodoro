@@ -18,6 +18,30 @@ let intervaloTempo = null;
 let ativo = false;
 let produzindo = true;
 
+function mudarTema(cor) {
+    if (cor === 'verde') {
+        document.documentElement.style.setProperty('--cor-h1', '#1f572c')
+        document.documentElement.style.setProperty('--cor-fundo', '#3b9252ff');
+        document.documentElement.style.setProperty('--cor-texto', '#002800');
+        document.documentElement.style.setProperty('--cor-botao', '#15481d');
+        document.documentElement.style.setProperty('--cor-botao-hover', '#0a380f');
+    }
+    else if (cor === 'azul') {
+        document.documentElement.style.setProperty('--cor-h1', '#63b3ce')
+        document.documentElement.style.setProperty('--cor-fundo', '#80cbe6');
+        document.documentElement.style.setProperty('--cor-texto', '#0a6c84');
+        document.documentElement.style.setProperty('--cor-botao', '#459cb5');
+        document.documentElement.style.setProperty('--cor-botao-hover', '#28849d');
+    }
+    else if (cor === 'rosa') {
+        document.documentElement.style.setProperty('--cor-h1', '#f993de')
+        document.documentElement.style.setProperty('--cor-fundo', '#ffadf7');
+        document.documentElement.style.setProperty('--cor-texto', '#e64394');
+        document.documentElement.style.setProperty('--cor-botao', '#ec5ead');
+        document.documentElement.style.setProperty('--cor-botao-hover', '#f378c6');
+    }
+}
+
 function updateDisplay() {
     let minutes = Math.floor(atualTempo / 60);
     let seconds = atualTempo % 60;
@@ -106,6 +130,10 @@ resetaBtn.addEventListener('click', () => {
 });
 
 musica.addEventListener('click', () => {
+    playClick();
+})
+
+temas.addEventListener('click', () => {
     playClick();
 })
 
